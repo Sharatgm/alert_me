@@ -4,22 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ProxActivity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"
         android:layout_height="51dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_marginBottom="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="194dp"
-        android:layout_height="45dp"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="192dp" />
+        style="style/Widget.CompoundButton.Switch"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Stairs"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Switch
+        android:id="@+id/switch5"
+        style="style/Widget.CompoundButton.Switch"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Stove"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Switch
+        android:id="@+id/switch4"
+        style="style/Widget.CompoundButton.Switch"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Safe Box"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,13 +88,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.182" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="360dp"
-        android:layout_height="24dp"
-        android:text="SafeBox"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="380dp" />
 
 </android.support.constraint.ConstraintLayout>
