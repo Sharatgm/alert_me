@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button Proximity = (Button) findViewById(R.id.button);
         Button Doors = (Button) findViewById(R.id.button2);
-        Proximity.setBackgroundColor(Color.parseColor("#ffbd4a"));
 
         Proximity.setOnClickListener(new View.OnClickListener() {
             @Override

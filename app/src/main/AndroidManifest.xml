@@ -19,7 +19,8 @@
         <activity android:name=".Activity1" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DoorsActivity" />
-        <activity android:name=".ProxActivity"></activity>
+        <activity android:name=".ProxActivity" />
+        <activity android:name=".Detail"></activity>
     </application>
 
 </manifest>
