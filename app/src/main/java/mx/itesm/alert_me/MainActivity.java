@@ -49,15 +49,18 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    // Acciones al presionar cada botón
+    // Acciones al presionar cada opción del menú
     public boolean onOptionsItemSelected(MenuItem menuItem){
         switch (menuItem.getItemId()){
             case R.id.settings:
-                Toast.makeText(this,"Has pulsado el botón borrar", Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(myIntent);
                 break;
             case R.id.logout:
-                Toast.makeText(this, "Has pulsado el botón editar", Toast.LENGTH_SHORT).show();
+                Intent myIntent2 = new Intent(MainActivity.this, loginActivity.class);
+                startActivity(myIntent2);
                 break;
+
         }
         return true;
     }
